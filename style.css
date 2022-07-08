@@ -1,0 +1,172 @@
+*{
+    margin:o;
+    padding: o;
+}
+#navbar{
+    display:flex;
+    align-items: center;
+    position: relative;
+}
+#logo{
+    margin:10px 34px;
+
+}
+#navbar ul{
+    display:flex;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    top:0;
+    left:0;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul list{
+    list-style: none;
+    font-size: 1.3rem;
+}
+#navbar ul list a{
+    color: white;
+    display: block;
+    padding :3px 12px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar ul list a:hover{
+    color:black;
+    background-color: white;
+}
+/* home section*/
+#home{
+    display:flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height: 280px;
+    justify-content: center;
+    align-items: center;
+}
+#home::before{
+    content: "";
+    background : url('img.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left:0;
+
+    height: 60%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+
+
+
+}
+#home h1{
+    color: white;
+    text-align: center;
+    height: 55px;
+    margin: 0;
+    padding: 0;
+}
+#home p{
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 0;
+    padding: 0;
+    line-height: 20px;
+
+    
+}
+#services{
+    display: flex;
+    font-size: 20px;
+    margin: 0;
+    padding: 5px;
+    background-color: turquoise;
+}
+.container{
+    margin:2px;
+
+    padding: 25px 15px;
+    border-radius: 20px;
+    
+    background-color: burlywood;
+    
+
+}
+
+#contact{
+    position: relative;
+    background-color: grey;
+}
+#contact::before{
+    content:"";
+    position: absolute;
+    width:100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    
+
+}
+
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.5rem;
+
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
+footer{
+    background: black;
+    color: white;
+    padding:9px 20px;
+}
+
+
+
+
+
+
+
+
+
+.h-primary{
+    font-size: 2.1rem;
+    padding: 8px;
+
+}
+
+.h-secondary{
+    font-size: 2.1rem;
+    padding:8px;
+}
+.btn{
+    padding: 6px 20px;
+    border:2px solid white;
+    background-color: brown;
+    color: whitesmoke;
+    margin:12px;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.center{
+    text-align: center;
+}
